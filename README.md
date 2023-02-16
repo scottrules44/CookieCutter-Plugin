@@ -1,5 +1,5 @@
 # cookieCutter
- Get a cookie from webview for iOS or MacOS/Sim
+Solar2D plugin to get a cookie from webview for iOS or MacOS/Sim
 
 
 Please see `demo` project to get started
