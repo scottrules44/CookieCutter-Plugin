@@ -1,0 +1,36 @@
+--
+-- For more information on build.settings see the Corona Build Guide at:
+-- http://docs.coronalabs.com/guide/distribution/buildSettings/index.html
+--
+
+settings =
+{
+	--[[
+	orientation =
+	{
+		default = "portrait",
+		supported = { "portrait" }
+	},
+	--]]
+
+	iphone =
+	{
+		xcassets = "Images.xcassets",
+		plist =
+		{
+			UILaunchStoryboardName = "LaunchScreen",
+		},
+	},
+	plugins =
+    {
+        ["plugin.cookieCutter"] =
+        {
+            publisherId = "tech.scotth",
+            supportedPlatforms = {
+                iphone = { url="https://firebasestorage.googleapis.com/v0/b/solar2d-marketplace.appspot.com/o/testPlugins%2FcookieCutter_iOS.tgz?alt=media&token=9f92d376-9f61-4a49-bd92-01e1cd2ee2c6" },
+                ["mac-sim"] = { url="https://firebasestorage.googleapis.com/v0/b/solar2d-marketplace.appspot.com/o/testPlugins%2FcookieCutter_mac.tgz?alt=media&token=9facc744-62d4-4a81-807a-9cdcc486a994" },
+                ["win32-sim"] = false
+            },
+        },
+    },
+}
